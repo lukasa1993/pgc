@@ -1,0 +1,28 @@
+{
+  "name": "@lukasa1993/pgc",
+  "version": "1.0.0",
+  "private": false,
+  "description": "pg for microservices",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasa1993/pgc.git"
+  },
+  "keywords": [
+    "postgres",
+    "pg"
+  ],
+  "author": "lukasa1993",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasa1993/pgc/issues"
+  },
+  "homepage": "https://github.com/lukasa1993/pgc#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
