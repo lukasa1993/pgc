@@ -1,6 +1,6 @@
 {
   "name": "@lukasa1993/pgc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "pg for microservices",
   "main": "index.js",

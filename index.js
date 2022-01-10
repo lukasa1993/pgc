@@ -13,11 +13,15 @@ const pool = new (pg.native ?? pg).Pool({
   } : null
 });
 
-export const query    = (sql, params) => pool.query(sql, params);
-export const client   = () => pool.connect();
-export const arrayArg = (arr, startIndex = 1) => {
+const query    = (sql, params) => pool.query(sql, params);
+const client   = () => pool.connect();
+const arrayArg = (arr, startIndex = 1) => {
   return arr.map((a, index) => {
     startIndex += index;
     return `$${startIndex}`;
   }).join(',');
+};
+
+module.exports = {
+  query, client, arrayArg
 };
